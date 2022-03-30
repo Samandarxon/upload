@@ -36,7 +36,7 @@ app.post("/uploads", upload.array("image1",4), async(req, res) => {
     });
 
   })
-    res.render("index")
+    res.redirect('/')
 });
 const port = process.env.PORT || 5000;
 app.listen(port , ()=>{
